@@ -54,7 +54,7 @@ dkms.conf
 # Other files and folders
 /test
 /Project1
-/Opencv属性表
+#Opencv属性表
 .vs/
 Debug/
 x64/
