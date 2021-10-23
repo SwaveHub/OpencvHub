@@ -52,9 +52,9 @@ Mkfile.old
 dkms.conf
 
 # Other files and folders
-/test
-/Project1
-#Opencv属性表
+/Opencv属性表
+/C++Practice
 .vs/
+
 Debug/
 x64/

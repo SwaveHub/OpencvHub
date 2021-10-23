@@ -18,11 +18,24 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lib\src\channel_show.cpp" />
+    <ClCompile Include="Lib\src\cv_draw.cpp" />
+    <ClCompile Include="Lib\src\histgram_disp.cpp" />
+    <ClCompile Include="Lib\src\img_binary.cpp" />
+    <ClCompile Include="Lib\src\img_show.cpp" />
+    <ClCompile Include="Lib\src\skin_detec.cpp" />
+    <ClCompile Include="Lib\src\video_capture.cpp" />
+    <ClCompile Include="User\app\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="User\app\inc\includes.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b9d907d8-0fdf-4285-b35b-11eb1e599780}</ProjectGuid>
-    <RootNamespace>Practice1</RootNamespace>
+    <ProjectGuid>{f11cfda6-ade9-48e6-8f50-0074c9f0af2c}</ProjectGuid>
+    <RootNamespace>Opencvcppprojects</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -116,6 +129,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\cProject\Opencv_cpp_projects\User\app\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,9 +152,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
