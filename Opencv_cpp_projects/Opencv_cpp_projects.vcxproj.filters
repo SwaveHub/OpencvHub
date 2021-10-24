@@ -45,6 +45,9 @@
     <ClCompile Include="Lib\src\img_binary.cpp">
       <Filter>源文件\lib</Filter>
     </ClCompile>
+    <ClCompile Include="Lib\src\cv_callback.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="User\app\inc\includes.h">

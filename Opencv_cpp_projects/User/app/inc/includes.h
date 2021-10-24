@@ -20,5 +20,6 @@ int channel_show(void);
 int video_capture(void);
 int skin_detect(void);
 int img_binary(void);
+int cv_callback(void);
 
 #endif /* __INCLUDESE_H */

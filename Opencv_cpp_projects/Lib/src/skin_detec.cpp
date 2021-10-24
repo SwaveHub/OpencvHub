@@ -14,7 +14,7 @@
 /**
  * @brief  ·ôÉ«¼ì²â
  * @param  ÎŞ
- * @retval ÎŞ
+ * @retval ×´Ì¬Âë
  */
 int skin_detect(void)
 {

@@ -19,13 +19,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lib\src\channel_show.cpp" />
-    <ClCompile Include="Lib\src\cv_draw.cpp" />
-    <ClCompile Include="Lib\src\histgram_disp.cpp" />
-    <ClCompile Include="Lib\src\img_binary.cpp" />
-    <ClCompile Include="Lib\src\img_show.cpp" />
-    <ClCompile Include="Lib\src\skin_detec.cpp" />
-    <ClCompile Include="Lib\src\video_capture.cpp" />
+    <ClCompile Include="Lib\src\channel_show.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Lib\src\cv_callback.cpp" />
+    <ClCompile Include="Lib\src\cv_draw.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Lib\src\histgram_disp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Lib\src\img_binary.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Lib\src\img_show.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Lib\src\skin_detec.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Lib\src\video_capture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="User\app\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
