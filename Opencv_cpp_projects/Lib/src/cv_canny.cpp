@@ -12,26 +12,30 @@
 
 
 /**
- * @brief  show一张手动修改像素的灰度图
+ * @brief  Canny边缘检测
  * @param  无
  * @retval 无
  */
-int img_show(void)
+int cv_canny(void)
 {
-	Mat srcImg = imread("lena.jpg");
+	int deepth = CV_16SC1;
 
-	int width = srcImg.cols;
-	int high = srcImg.rows;
+	Mat img_src = imread("lena.jpg");
+	Mat img_gray;
+	Mat	img_canny;
 
-	for (int j = 0; j < high; j++) {
-		for (int i = 0; i < width; i++) {
-			uint8_t avg = (srcImg.at<Vec3b>(j, i)[0] + srcImg.at<Vec3b>(j, i)[1] + srcImg.at<Vec3b>(j, i)[2]) / 3;
-			srcImg.at<Vec3b>(j, i)[0] = avg;
-			srcImg.at<Vec3b>(j, i)[1] = avg;
-			srcImg.at<Vec3b>(j, i)[2] = avg;
-		}
-	}
-	imshow("transImg", srcImg);
+	cvtColor(img_src, img_gray, COLOR_BGR2GRAY);
+
+	Mat grad_x, grad_y;
+
+	Sobel(img_src, grad_x, deepth, 1, 0, 3);
+	Sobel(img_src, grad_y, deepth, 0, 1, 3);
+
+	Canny(grad_x, grad_y, img_canny, 50, 150, false);
+	imshow("img_canny_1", img_canny);
+
+	Canny(img_gray, img_canny, 50, 150, 3, false);
+	imshow("img_canny2", img_canny);
 
 	/* 等待用户按键 */
 	waitKey(0);

@@ -1,5 +1,5 @@
-#ifndef __INCLUDESE_H
-#define	__INCLUDESE_H
+#ifndef __INCLUDESE_HPP
+#define	__INCLUDESE_HPP
 
 /******************************** Í·ÎÄ¼þ *************************************/
 #include <opencv2/opencv.hpp>
@@ -21,5 +21,17 @@ int video_capture(void);
 int skin_detect(void);
 int img_binary(void);
 int cv_callback(void);
+int cv_erode(void);
+int cv_bounding(void);
+int dot_count(void);
+int clip_count(void);
+int cv_blur(void);
+int cv_sobel(void);
+int skin_ps(void);
+int cv_canny(void);
+int img_rotate_scale(void);
+int img_affine(void);
+int img_projection(void);
+int img_correct(void);
 
-#endif /* __INCLUDESE_H */
+#endif /* __INCLUDESE_HPP */

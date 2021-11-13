@@ -48,9 +48,27 @@
     <ClCompile Include="Lib\src\cv_callback.cpp">
       <Filter>源文件\lib</Filter>
     </ClCompile>
+    <ClCompile Include="Lib\src\cv_erode.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\src\cv_bounding.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\src\auto_count.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\src\cv_blur.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\src\cv_canny.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\src\img_trans.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="User\app\inc\includes.h">
+    <ClInclude Include="User\app\inc\includes.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
