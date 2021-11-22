@@ -66,6 +66,12 @@
     <ClCompile Include="Lib\src\img_trans.cpp">
       <Filter>源文件\lib</Filter>
     </ClCompile>
+    <ClCompile Include="Lib\src\cv_houghlines.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\src\cv_findcontours.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="User\app\inc\includes.hpp">

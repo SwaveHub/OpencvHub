@@ -33,5 +33,11 @@ int img_rotate_scale(void);
 int img_affine(void);
 int img_projection(void);
 int img_correct(void);
+int img_rotate_cor(void);
+int img_houghlines(void);
+int img_houghlines_p(void);
+int cv_findhole(void);
+int cv_findchip(void);
+int cv_findcup(void);
 
 #endif /* __INCLUDESE_HPP */

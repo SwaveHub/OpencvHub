@@ -12,13 +12,13 @@
 
 
 /**
- * @brief  main函数入口
+ * @brief  main函数入口 
  * @param  无
  * @retval 状态码
  */
 int main(void)
 {
-	img_correct();
+	cv_findcup();
 	return 0;
 }
 
