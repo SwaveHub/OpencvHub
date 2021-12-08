@@ -93,6 +93,7 @@ int cv_findchip(void)
 			drawContours(img_src, contours, i, Scalar(0, 255, 255), 1, 8);
 			Point2f vtx[4];
 			rbox.points(vtx);
+			cout << "ratio:" << ratio << endl;
 			for (int i = 0; i < 4; i++) {
 				line(img_src, vtx[i], vtx[i < 3 ? i + 1 : 0], Scalar(0, 0, 255), 4);
 			}

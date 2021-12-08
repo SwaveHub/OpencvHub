@@ -39,5 +39,10 @@ int img_houghlines_p(void);
 int cv_findhole(void);
 int cv_findchip(void);
 int cv_findcup(void);
+int cv_hog(Mat src, float* hist, int block_size, int angle_div);
+float cv_hog_match(Mat img_src, Mat img_ref, int block_size, int angle_div);
+
+int dftDemo();
+int ifftDemo();
 
 #endif /* __INCLUDESE_HPP */

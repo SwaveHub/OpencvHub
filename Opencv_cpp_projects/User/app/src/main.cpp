@@ -18,7 +18,7 @@
  */
 int main(void)
 {
-	cv_findcup();
+	ifftDemo();
 	return 0;
 }
 

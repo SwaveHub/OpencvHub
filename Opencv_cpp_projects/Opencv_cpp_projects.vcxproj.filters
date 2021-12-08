@@ -72,6 +72,12 @@
     <ClCompile Include="Lib\src\cv_findcontours.cpp">
       <Filter>源文件\lib</Filter>
     </ClCompile>
+    <ClCompile Include="Lib\src\cv_hog.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\src\funtions.cpp">
+      <Filter>源文件\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="User\app\inc\includes.hpp">
